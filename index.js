@@ -4,6 +4,7 @@ const express = require("express"),
 const app = express();
 
 app.use(morgan("common"));
+app.use(express.static("public/documentation"));
 
 let topMovies = [
     {
@@ -46,7 +47,7 @@ app.get("/", (request, response) => {
     response.send("Hello movie lover, welcome to my movie app!");
 });
 
-app.use(express.static("public/documentation"));
+
 
 app.listen(8080, () => {
     console.log("My app is listening on port 8080! yeah-haw!");
