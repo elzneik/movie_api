@@ -4,7 +4,7 @@ const express = require("express"),
 const app = express();
 
 app.use(morgan("common"));
-app.use(express.static("public/documentation"));
+app.use(express.static("public"));
 
 let topMovies = [
     {
