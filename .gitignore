@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-=======
-git rm -r --cached node_modules
-git commit -m "Removed node_modules"
-git push origin master
->>>>>>> 4599581c8e04507671dbaf552e206ea41e8e582e
